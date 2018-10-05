@@ -25,4 +25,4 @@ var wordCountMap = monologueLines.reduce((wordMap, phrase) => {
   }
   wordMap[wordCount]++;
   return wordMap;
-});
+}, {});
