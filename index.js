@@ -18,7 +18,7 @@ const monologueLines = [
 ];
 var wordCountMap = monologueLines.reduce((wordMap, phrase) => {
   const wordCount = phrase.split(' ').length;
-  if (!wordmap[wordCount]) {
+  if (!wordMap[wordCount]) {
     wordMap[wordCount] = 0;
   }
   wordMap[wordCount]++;
