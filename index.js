@@ -16,3 +16,11 @@ const monologueLines = [
   'No.',
   'I am the one who knocks!'
 ];
+var wordCountMap = monologueLines.reduce(f(wordMap, phrase) => {
+  const wordCount = phrase.split(' ').length;
+  if (!wordmap[wordCount]) {
+    wordMap[wordCount] = 0;
+  }
+  wordMap[wordCount]++;
+  return wordMap;
+}, {});
